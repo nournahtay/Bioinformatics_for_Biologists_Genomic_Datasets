@@ -1,7 +1,9 @@
+#Install Packages
 install.packages("tidyr")
 install.packages("dplyr")
 install.packages("tidyverse")
-list.files()
+
+#Assign and Explore the Structures of the File
 var <- read.csv("variants_long_table.csv")
 head(var)
 dim(var)
@@ -17,6 +19,8 @@ typeof(var$CHROM)
 View(var)
 colnames(var)
 var[, c(1, 4, 5)]
+
+#Select and Filter Columns on the data
 select(var, SAMPLE, REF, ALT)
 select(var, SAMPLE, REF, ALT) %>% head(3)
 select(var, -CALLER) %>% head(3)
@@ -44,6 +48,8 @@ var_tb %>% count(SAMPLE, GENE, sort = TRUE) %>% head(6)
 var_tb %>% count(CHROM, sort = TRUE) %>% head()
 var_tb %>% count(CHROM, sort = TRUE) %>% head(6)
 var_tb %>% count(SAMPLE, CHROM, sort = TRUE) %>% head()
+
+#Visualize Data 
 ggplot(data = var_tb)
 ggplot(data = var_tb, aes(x=SAMPLE, y=DP))
 ggplot(data = var_tb, aes(x=SAMPLE, y=DP)) + geom_point()
