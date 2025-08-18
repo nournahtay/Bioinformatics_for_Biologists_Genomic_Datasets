@@ -17,3 +17,6 @@ Downstream Analysis and Visualization was done using RStudio packages, such as:
 1. dplyr
 2. tidyverse
 3. ggplot2
+
+**Reference Genome:** MN908947
+**Total Variants Identified:** 153
