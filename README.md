@@ -5,8 +5,13 @@ This project was done as part of Wellcome Connecting Science's "Bioinformatics f
 This course employed linux for dataset preprocessing, sequence quality control, genome mapping, and variant calling for identifying variants.
 Some of the tools employed were:
 1. multiQC
-2. Integrative Genomics Viewer (IGV)
-3. nf-core's viralrecon
+2. Samtools
+3. BWA-MEM
+4. bcftools
+5. SRA-toolkit
+6. FreeBayes
+7. Integrative Genomics Viewer (IGV)
+8. nf-core's viralrecon
 
 Downstream Analysis and Visualization was done using RStudio packages, such as:
 1. dplyr
